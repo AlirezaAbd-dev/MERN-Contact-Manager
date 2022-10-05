@@ -12,15 +12,15 @@
 
 primarily you have to run this code to install nodeJs dependencies
 
-### cd ./server && npm i
+### `cd ./server && npm i`
 
 And then you can run the server with this line
 
-### npm start
+### `npm start`
 
 After that you have to install react dependencies, open new terminal and run this line
 
-### cd ./client && npm i
+### `cd ./client && npm i`
 
 In the client directory, you can run:
 
