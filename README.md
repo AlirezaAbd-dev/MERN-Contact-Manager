@@ -2,7 +2,6 @@
 
 <img src="./image/مدیریت مخاطبین - Brave 10_3_2022 4_02_38 PM.png" alt="project image" />
 
-<br />
 <hr/>
 <br />
 
