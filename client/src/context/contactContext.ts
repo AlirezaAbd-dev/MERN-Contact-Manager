@@ -21,7 +21,7 @@ export interface Groups {
 export interface Contact{
   fullName:string,
   photo:string,
-  mobile:string,
+  mobile:number,
   email:string,
   job:string,
   group:string,

@@ -24,7 +24,7 @@ const EditContact:React.FC = () => {
   const [contact, setContact] = useImmer<ContactType>({
     fullName:'',
     photo:'',
-    mobile:'',
+    mobile:0,
     email:'',
     job:'',
     group:'',
@@ -60,7 +60,7 @@ const EditContact:React.FC = () => {
         setContacts((draft: ContactType[])=>{
           const contactIndex=draft.findIndex(c=>{
             if (c._id && contactId){
-            return +c._id===+contactId
+            return c._id===contactId
             }
           })
           draft[contactIndex] ={...data}
@@ -68,7 +68,7 @@ const EditContact:React.FC = () => {
         setFilteredContacts((draft:ContactType[])=>{
           const contactIndex=draft.findIndex(c=>{
             if (c._id && contactId){
-            return +c._id===+contactId
+            return c._id===contactId
           }
           })
           draft[contactIndex] ={...data}
@@ -106,7 +106,14 @@ const EditContact:React.FC = () => {
                 <Formik initialValues={contact}
                     validationSchema={contactSchema}
                     onSubmit={(values:ContactType) => {
-                      submitForm(values).then()
+                      submitForm({
+                        fullName: values.fullName,
+                        photo: values.photo,
+                        mobile: +values.mobile,
+                        email: values.email,
+                        job: values.job,
+                        group: values.group
+                      }).then()
                     }}>
                     <Form>
                       <div className="mb-2">

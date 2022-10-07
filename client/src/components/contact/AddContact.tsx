@@ -58,7 +58,14 @@ const AddContact = () => {
                   }}
                     validationSchema={contactSchema}
                     onSubmit={(values) => {
-                      createContact(values)
+                      createContact({
+                        fullName: values.fullName,
+                        photo: values.photo,
+                        mobile: +values.mobile,
+                        email: values.email,
+                        job: values.job,
+                        group: values.group
+                      })
                     }}>
                     <Form>
                       <div className="mb-2">
@@ -68,7 +75,7 @@ const AddContact = () => {
                           className="form-control"
                           placeholder="نام و نام خانوادگی"
                         />
-                        <ErrorMessage name="fullName" render={msg=> <div className="text-danger">{msg}</div>} />
+                        <ErrorMessage name="fullName" render={msg => <div className="text-danger">{msg}</div>} />
                       </div>
                       <div className="mb-2">
                         <Field
@@ -77,7 +84,7 @@ const AddContact = () => {
                           className="form-control"
                           placeholder="آدرس تصویر"
                         />
-                        <ErrorMessage name="photo" render={msg=> <div className="text-danger">{msg}</div>}/>
+                        <ErrorMessage name="photo" render={msg => <div className="text-danger">{msg}</div>} />
 
                       </div>
                       <div className="mb-2">
@@ -87,7 +94,7 @@ const AddContact = () => {
                           className="form-control"
                           placeholder="شماره موبایل"
                         />
-                        <ErrorMessage name="mobile" render={msg=> <div className="text-danger">{msg}</div>}/>
+                        <ErrorMessage name="mobile" render={msg => <div className="text-danger">{msg}</div>} />
                       </div>
                       <div className="mb-2">
                         <Field
@@ -96,7 +103,7 @@ const AddContact = () => {
                           className="form-control"
                           placeholder="آدرس ایمیل"
                         />
-                        <ErrorMessage name="email" render={msg=> <div className="text-danger">{msg}</div>}/>
+                        <ErrorMessage name="email" render={msg => <div className="text-danger">{msg}</div>} />
                       </div>
                       <div className="mb-2">
                         <Field
@@ -105,7 +112,7 @@ const AddContact = () => {
                           className="form-control"
                           placeholder="شغل"
                         />
-                        <ErrorMessage name="job" render={msg=> <div className="text-danger">{msg}</div>}/>
+                        <ErrorMessage name="job" render={msg => <div className="text-danger">{msg}</div>} />
                       </div>
                       <div className="mb-2">
                         <Field
@@ -122,7 +129,7 @@ const AddContact = () => {
                               </option>
                             ))}
                         </Field>
-                        <ErrorMessage name='group' render={msg=> <div className="text-danger">{msg}</div>}/>
+                        <ErrorMessage name='group' render={msg => <div className="text-danger">{msg}</div>} />
                       </div>
                       <div className="mx-2">
                         <input
