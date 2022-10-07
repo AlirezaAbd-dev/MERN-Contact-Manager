@@ -20,7 +20,7 @@ const ViewContact = () => {
             fullName: '',
             photo: '',
             job: '',
-            mobile: '',
+            mobile: 0,
             email: '',
             group: '',
             _id: ''
