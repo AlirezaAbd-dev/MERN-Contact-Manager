@@ -1,6 +1,15 @@
 import mongoose, {Schema} from "mongoose";
 
-const schema=new Schema({
+interface ContactSchema{
+    fullName: string;
+    job:string
+    mobile:string
+    photo:string
+    email:string
+    group:string
+}
+
+const schema=new Schema<ContactSchema>({
     fullName:String,
     job:String,
     mobile:String,
@@ -9,6 +18,6 @@ const schema=new Schema({
     group:String
 })
 
-const contactsModel=mongoose.model('contacts',schema)
+const contactsModel=mongoose.model<ContactSchema>('contacts',schema)
 
 export default contactsModel

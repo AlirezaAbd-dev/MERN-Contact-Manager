@@ -1,36 +1,39 @@
 import express from 'express';
-import * as mongoose from "mongoose";
+// @ts-ignore
+import mongoose from "mongoose";
 import cors from "cors"
 import winston from 'winston'
 import 'winston-mongodb'
+import "dotenv"
 
 import {ErrorMiddleware} from './middlewares/Error'
 import router from "./routes/contactRoutes";
-import * as path from "path";
 
 let logger: winston.Logger;
 
 class App {
     private readonly port: number
+    private readonly DB_URI: string
     static logger: winston.Logger
 
     constructor() {
-        this.port = 3000
+        this.port = process.env.PORT ? +process.env.PORT : 3000
+        this.DB_URI = "mongodb+srv://0Alireza0:%40aliCR7reza@mernstacktodo.i9u0btt.mongodb.net/?retryWrites=true&w=majority" || "mongodb://localhost:27017/contactManager"
 
         this.setupDatabase().then()
         this.setupExpressServer()
     }
 
     async setupDatabase() {
-        mongoose
-            .connect('mongodb://localhost:27017/contactManager')
-            .then(() => {
-                console.log('db connection established!')
-                console.log('_________________________________________')
-            }).catch(err => {
+        try {
+            await mongoose
+                .connect(this.DB_URI)
+            console.log('db connection established!')
+            console.log('_________________________________________')
+        } catch (err: any) {
             console.log(err.stack)
             winston.error(err.stack)
-        })
+        }
 
         logger = winston.createLogger({
             transports: [

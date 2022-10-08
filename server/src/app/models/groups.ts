@@ -1,7 +1,14 @@
 import mongoose from "mongoose";
 
-const schema = new mongoose.Schema({
+interface GroupsSchema{
+    groups: {
+        id: string
+        name:string
+    }[]
+}
+
+const schema = new mongoose.Schema<GroupsSchema>({
     groups:Array
 })
 
-export const groupModel = mongoose.model('groups', schema);
+export const groupModel = mongoose.model<GroupsSchema>('groups', schema);

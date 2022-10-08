@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently \"npm run compile\" \"nodemon dist/server.js\"", 
+    "start": "node dist/server.js",
     "compile": "tsc -w"
   },
   "author": "",
@@ -13,6 +12,7 @@
   "devDependencies": {
     "@types/cors": "^2.8.12",
     "@types/express": "^4.17.14",
+    "@types/mongoose": "^5.11.97",
     "nodemon": "^2.0.20"
   },
   "dependencies": {
