@@ -1,57 +1,83 @@
-## Project Image
+<h1 align='center' style="font-size:5rem"><b>Contact Manager</b></h1>
 
-<img src="./image/مدیریت مخاطبین - Brave 10_3_2022 4_02_38 PM.png" alt="project image" />
+</div>
+<br><br><br>
+<h2 align='center'>
+    This website can be used to save your contacts information and manage them. 
+</h2>
 
-<hr/>
-<br />
+<br><br><br>
 
-<img src="./image/Contact-manager_README.md at master · 0AliReza0_Contact-manager - Brave 10_3_2022 4_09_30 PM.png">
+<div align='center'>
+    <h2>Main page</h2>
+    <img style='border-radius:5px' src="https://github.com/0AliReza0/MERN-Stack-Typescript-contact-manager/blob/72c943eb975376bfe90f458020a6d683e4348099/image/%D9%85%D8%AF%DB%8C%D8%B1%DB%8C%D8%AA%20%D9%85%D8%AE%D8%A7%D8%B7%D8%A8%DB%8C%D9%86%20-%20Brave%2010_3_2022%204_02_38%20PM.png"></img>
+    <br>
+    <br><br><br>
+    <h2>Edit Page</h2>
+    <img style='border-radius:5px' src="https://github.com/0AliReza0/MERN-Stack-Typescript-contact-manager/blob/72c943eb975376bfe90f458020a6d683e4348099/image/Contact-manager_README.md%20at%20master%20%C2%B7%200AliReza0_Contact-manager%20-%20Brave%2010_3_2022%204_09_30%20PM.png"></img>
+</div>
+<hr>
 
-## Available Scripts
+<br><br><br><br>
 
-primarily you have to run this code to install nodeJs dependencies
+<h1 align='center'><b>Abilities</b></h1>
 
-### `cd ./server && npm i`
+<ul>
+    <li> Able To Run Server</li>
+    <li> Able To add a contact,edit and remove it</li>
+</ul>
 
-And then you can run the server with this line
+<hr>
+<br><br><br><br>
+<h1 align='center'><b>Language and technologies used in This Project</h1>
+<img src="https://img.shields.io/badge/WebStorm-000000?style=for-the-badge&logo=WebStorm&logoColor=white"></img>
+<img src="https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white"></img>
+<img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"></img>
+<img src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white"></img>
+<img src="https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white"></img>
+<img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"></img>
+<img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"></img>
+<img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"></img>
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"></img>
+<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"></img>
+<img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"></img>
 
-### `npm start`
+<br><br><br><br>
 
-After that you have to install react dependencies, open new terminal and run this line
+<h1 align='center'><b>Requirements</b></h1>
 
-### `cd ./client && npm i`
+Download and install `NodeJS` from official website <a href="https://nodejs.org/">nodeJS.org</a>
 
-In the client directory, you can run:
+<br>
 
-### `npm start`
+Download and install `MongoDB` from official website <a href="https://www.mongodb.com/try/download/community">mongoDB.com</a>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<br><br><br><br>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<h1 align='center'><b>How To Run</b></h1>
 
-### `npm test`
+At first you have to clone the project and open it in `IDE`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<br>
 
-### `npm run build`
+Open IDE's terminal and then write `~ cd server` and enter
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+After that write `~ npm i` and enter
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<br>
 
-### `npm run eject`
+type `~ npm start` and then enter
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<br>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Now open another terminal and write `~ cd client`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<br>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+And then write `~ npm i` and `~ npm start`
+
+<br>
+
+Congratulations ,now you can `signup` and use the website
