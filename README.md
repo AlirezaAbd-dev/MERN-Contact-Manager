@@ -60,7 +60,7 @@ At first you have to clone the project and open it in `IDE`
 
 <br>
 
-Open IDE's terminal and then write `~ cd server` and enter
+Open IDE's terminal and then write `~ cd client` and enter
 
 <br>
 
@@ -70,14 +70,4 @@ After that write `~ npm i` and enter
 
 type `~ npm start` and then enter
 
-<br>
-
-Now open another terminal and write `~ cd client`
-
-<br>
-
-And then write `~ npm i` and `~ npm start`
-
-<br>
-
-Congratulations ,now you can `signup` and use the website
+Congratulations ,now you can add a contact and manage it.
