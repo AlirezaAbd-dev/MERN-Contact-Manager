@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { Contact } from '../context/contactContext';
 
-const SERVER_URL:string = 'http://localhost:3000/api';
+const SERVER_URL:string = 'https://contact-manager-0cov.onrender.com/api';
 
 // @desc Get All Contacts
 // @route GET http://localhost:3000/api/getContacts
