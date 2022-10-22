@@ -1,9 +1,9 @@
-import 'package:contactmanager/pages/create_contacts.dart';
 import 'package:flutter/material.dart';
-import 'package:contactmanager/widget/main_appbar.dart';
 import 'package:contactmanager/colors/colors.dart';
+import 'package:contactmanager/widget/main_appbar.dart';
 import 'package:contactmanager/pages/edit_contacts.dart';
 import 'package:contactmanager/pages/view_contacts.dart';
+import 'package:contactmanager/pages/create_contacts.dart';
 
 class Contacts extends StatefulWidget {
   const Contacts({Key? key}) : super(key: key);
@@ -19,7 +19,11 @@ class _ContactsState extends State<Contacts> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: background,
-      appBar: const ContactManagerAppbar(),
+      appBar: const ContactManagerAppbar(
+        centerTitle: false,
+        mainAxisAlignment: MainAxisAlignment.start,
+        prefferedWidth: 110.0,
+      ),
       body: SafeArea(
         child: Stack(
           children: <Widget>[
