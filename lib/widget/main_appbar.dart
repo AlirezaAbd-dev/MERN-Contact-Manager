@@ -5,11 +5,17 @@ class ContactManagerAppbar extends StatelessWidget
     implements PreferredSizeWidget {
   final Widget? title;
   final Color? backgroundColor;
+  final bool centerTitle;
+  final MainAxisAlignment mainAxisAlignment;
+  final double? prefferedWidth;
 
   const ContactManagerAppbar({
     Key? key,
     this.title,
     this.backgroundColor,
+    required this.centerTitle,
+    required this.mainAxisAlignment,
+    required this.prefferedWidth,
   }) : super(key: key);
 
   @override
@@ -20,28 +26,26 @@ class ContactManagerAppbar extends StatelessWidget
     return AppBar(
       backgroundColor: currentline,
       title: Row(
+        mainAxisAlignment: mainAxisAlignment,
         textDirection: TextDirection.rtl,
-        children: const <Widget>[
+        children: <Widget>[
           SizedBox(
-            width: 120.0,
+            width: prefferedWidth,
           ),
-          Padding(
-            padding: EdgeInsets.only(left: 5.0),
-            child: Icon(
-              Icons.person,
-              color: purple,
-            ),
+          const Icon(
+            Icons.person,
+            color: purple,
           ),
-          SizedBox(
+          const SizedBox(
             width: 5.0,
           ),
-          Text(
+          const Text(
             'اپلیکیشن مدیریت',
           ),
-          SizedBox(
+          const SizedBox(
             width: 5.0,
           ),
-          Text(
+          const Text(
             'مخاطبین',
             style: TextStyle(
               color: purple,
