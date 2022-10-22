@@ -1,7 +1,7 @@
+import 'package:contactmanager/widget/main_appbar.dart';
 import 'package:flutter/material.dart';
 import 'package:contactmanager/colors/colors.dart';
 import 'package:contactmanager/constants/image_url.dart';
-import 'package:contactmanager/widget/centered_appbar.dart';
 
 class EditContacts extends StatefulWidget {
   const EditContacts({Key? key}) : super(key: key);
@@ -14,7 +14,11 @@ class _EditContactsState extends State<EditContacts> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const ContactManagerCenteredAppbar(),
+      appBar: const ContactManagerAppbar(
+        centerTitle: true,
+        mainAxisAlignment: MainAxisAlignment.center,
+        prefferedWidth: 40.0,
+      ),
       backgroundColor: background,
       body: SafeArea(
         child: Stack(
