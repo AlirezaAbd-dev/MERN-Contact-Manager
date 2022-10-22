@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:contactmanager/widget/main_appbar.dart';
 import 'package:contactmanager/colors/colors.dart';
-import 'package:contactmanager/widget/centered_appbar.dart';
 
 class ViewContacts extends StatefulWidget {
   const ViewContacts({super.key});
@@ -14,7 +14,11 @@ class _ViewContactsState extends State<ViewContacts> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: background,
-      appBar: const ContactManagerCenteredAppbar(),
+      appBar: const ContactManagerAppbar(
+        centerTitle: true,
+        mainAxisAlignment: MainAxisAlignment.center,
+        prefferedWidth: 40.0,
+      ),
       body: SafeArea(
         child: Stack(
           children: <Widget>[
