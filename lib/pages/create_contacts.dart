@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:contactmanager/colors/colors.dart';
 import 'package:contactmanager/pages/contacts.dart';
+import 'package:contactmanager/widget/main_appbar.dart';
 import 'package:contactmanager/constants/image_url.dart';
-import 'package:contactmanager/widget/centered_appbar.dart';
 
 class CreateContact extends StatefulWidget {
   const CreateContact({super.key});
@@ -16,7 +16,11 @@ class _CreateContactState extends State<CreateContact> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: background,
-      appBar: const ContactManagerCenteredAppbar(),
+      appBar: const ContactManagerAppbar(
+        centerTitle: true,
+        mainAxisAlignment: MainAxisAlignment.center,
+        prefferedWidth: 40.0,
+      ),
       body: SafeArea(
         child: Stack(
           children: <Widget>[
