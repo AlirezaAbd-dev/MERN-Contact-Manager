@@ -3,13 +3,13 @@
 A new Flutter project.
 
 <div align='center'>
-    <img src='https://github.com/shervinbdndev/MERN-Contact-Manager/blob/Windows/images/main.png' width='1000' , height=500></img>
+    <img src='https://github.com/shervinbdndev/MERN-Contact-Manager/blob/Windows/images/main.png' width='1920' , height=1080></img>
     <br>
-    <img src='https://github.com/shervinbdndev/MERN-Contact-Manager/blob/Windows/images/create.png' width='1000' , height=500></img>
+    <img src='https://github.com/shervinbdndev/MERN-Contact-Manager/blob/Windows/images/create.png' width='1920' , height=1080></img>
     <br>
-    <img src='https://github.com/shervinbdndev/MERN-Contact-Manager/blob/Windows/images/info.png' width='1000' , height=500></img>
+    <img src='https://github.com/shervinbdndev/MERN-Contact-Manager/blob/Windows/images/info.png' width='1920' , height=1080></img>
     <br>
-    <img src='https://github.com/shervinbdndev/MERN-Contact-Manager/blob/Windows/images/edit.png' width='1000' , height=500></img>
+    <img src='https://github.com/shervinbdndev/MERN-Contact-Manager/blob/Windows/images/edit.png' width='1920' , height=1080></img>
     <br>
 </div>
 
