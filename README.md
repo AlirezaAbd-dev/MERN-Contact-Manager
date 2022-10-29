@@ -2,14 +2,14 @@
 
 A new Flutter project.
 
-<div align='center'>
-    <img src='https://github.com/shervinbdndev/MERN-Contact-Manager/blob/Windows/images/main.png' width='350' , height=200></img>
+<div align='left'>
+    <img src='https://github.com/shervinbdndev/MERN-Contact-Manager/blob/Windows/images/main.png' width='500' , height=300></img>
     <br>
-    <img src='https://github.com/shervinbdndev/MERN-Contact-Manager/blob/Windows/images/create.png' width='350' , height=200></img>
+    <img src='https://github.com/shervinbdndev/MERN-Contact-Manager/blob/Windows/images/create.png' width='500' , height=300></img>
     <br>
-    <img src='https://github.com/shervinbdndev/MERN-Contact-Manager/blob/Windows/images/info.png' width='350' , height=200></img>
+    <img src='https://github.com/shervinbdndev/MERN-Contact-Manager/blob/Windows/images/info.png' width='500' , height=300></img>
     <br>
-    <img src='https://github.com/shervinbdndev/MERN-Contact-Manager/blob/Windows/images/edit.png' width='350' , height=200></img>
+    <img src='https://github.com/shervinbdndev/MERN-Contact-Manager/blob/Windows/images/edit.png' width='500' , height=300></img>
     <br>
 </div>
 
